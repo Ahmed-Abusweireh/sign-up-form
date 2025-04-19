@@ -35,6 +35,7 @@
            grid-area: auto;
             justify-content: space-between;
             width: 100%;
+            
         }
         
         label {
@@ -75,10 +76,22 @@
             width: 100%;
         } */
         
+        input[type="checkbox"]{
+            
+            float: right;
+            
+        }
         /* Terms Checkbox */
         .terms-check {
-            /* margin: 15px 0;
-            display: flex; */
+             margin: 30px;
+            
+            
+        }
+
+         label{
+            user-select: none;         /* Standard */
+          
+            
         }
 
         h1{
@@ -104,8 +117,8 @@
         <form action="form.php" method="POST">
             <!-- Name Fields -->
             <div class="form-row">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
             </div>
             
             <div class="form-row">
@@ -168,11 +181,11 @@
             <!-- Terms Agreement -->
             <div class="terms-check">
                 <label>
-                    I agree to the Terms of Use
-                </label>
+                    I agree to the Terms of Use 
+               
                     <input type="checkbox" name="terms" required>
                    
-                
+                </label>
             </div>
             
             <!-- Submit Button -->
